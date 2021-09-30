@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -7,11 +7,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="sass/styles.css">
   <title>Hotel Booking</title>
 </head>
-<body>
-test
+<body class="body">
+<header class="header">
+  <div class="container">
+    <div class="header-top">
+      <a href="#" class="logo"><img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image"></a>
+
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Search Locations">
+        <button class="search__button">
+          <img src="img/search.svg" alt="Icon: search">
+        </button>
+      </form>
+
+      <a href="#" class="user">
+        <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
+        <span class="user__name">Nathan</span>
+      </a>
+    </div>
+    <ul class="header-menu">
+      <li class="header-menu__item"><a href="#" class="header-menu__link">all deals</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link">hotels</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link">activities</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link">hotel day packages</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link">restaurants</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link">events</a></li>
+      <li class="header-menu__item"><a href="#" class="header-menu__link">rodrigues</a></li>
+    </ul>
+  </div>
+</header>
 </body>
 </html>
