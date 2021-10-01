@@ -1,10 +1,14 @@
+// Normalize
+@import "normalize";
+
 // Подключение настроек
 @import "settings";
 
 // Переменные
 @import "variables";
 
-// Normalize
-@import "normalize";
-
+// Все стили
 @import "templates/header";
+
+// Media
+@import "media";
