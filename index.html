@@ -15,6 +15,7 @@
         rel="stylesheet">
   <link rel="stylesheet"
         href="sass/styles.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <title>Hotel Booking</title>
 </head>
 <body class="body">
@@ -132,8 +133,33 @@
         <span class="rating__counter">4.5/5</span>
       </div>
     </div>
+    <div class="hotel-grid">
+      <div class="slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/slide.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide.jpg" alt="slide">
+            </div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="slider-button slider-button_prev"></button>
+          <button class="slider-button slider-button_next"></button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
