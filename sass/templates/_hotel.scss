@@ -7,14 +7,17 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
+
     &__offer {
       margin-left: 14px;
       margin-top: 4px;
     }
+
     &__name {
       margin-top: 4px;
       margin-bottom: 0;
     }
+
     &__description {
       margin: 5px 0;
     }
@@ -32,6 +35,7 @@
     flex-wrap: wrap;
     align-items: center;
   }
+
   &-description {
     font-size: 12px;
     line-height: 15px;
@@ -58,10 +62,12 @@
   text-align: center;
   background-color: $primary;
   color: $white;
+
   &__text {
     font-size: 8px;
     line-height: 10px;
   }
+
   &__counter {
     font-size: 14px;
     line-height: 18px;
@@ -73,6 +79,7 @@
   width: 100%;
   height: 450px;
   border-radius: 8px;
+
   &:after {
     content: '';
     position: absolute;
@@ -85,6 +92,7 @@
     right: 0;
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   }
+
   &__image {
     width: 100%;
   }
@@ -92,6 +100,7 @@
 
 .slider {
   width: 728px;
+
   &-button {
     position: absolute;
     top: 50%;
@@ -106,13 +115,15 @@
     background-size: 10px;
     background-color: transparent;
     cursor: pointer;
+
     &_next {
       right: 18px;
-      background-image: url(../../img/arrow-next.svg);
+      background-image: url(../img/arrow-next.svg);
     }
+
     &_prev {
       left: 18px;
-      background-image: url(../../img/arrow-prev.svg);
+      background-image: url(../img/arrow-prev.svg);
     }
   }
 }
