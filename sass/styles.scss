@@ -1,14 +1,21 @@
 // Normalize
 @import "normalize";
 
+@import "variables";
+
 // Подключение настроек
 @import "settings";
 
-// Переменные
-@import "variables";
 
 // Все стили
 @import "templates/header";
+
+// Breadcrumb
+@import "templates/breadcrumb";
+
+// Hotel
+@import "templates/hotel";
+
 
 // Media
 @import "media";
