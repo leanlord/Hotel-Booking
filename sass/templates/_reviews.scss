@@ -2,7 +2,7 @@
   padding: 40px 0 70px 0;
 
   &__title {
-    margin-bottom: 70px;
+    margin: auto auto 70px;
     font-weight: bold;
     font-size: 36px;
     line-height: 45px;
@@ -16,7 +16,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 730px;
+      max-width: 730px;
       margin: 45px auto auto;
       padding: 0 62px 30px;
       background-color: #fff;
@@ -87,6 +87,7 @@
     }
 
     &__username {
+      margin-top: 0;
       margin-bottom: 10px;
       font-weight: bold;
       font-size: 12px;
