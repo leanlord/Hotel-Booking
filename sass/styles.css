@@ -672,6 +672,78 @@ img {
   cursor: pointer;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url("../img/newsletter-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsletter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+.newsletter-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  max-width: 731px;
+  margin: auto;
+}
+.newsletter-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+.newsletter-title__strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 33px;
+  padding-right: 75px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.subscribe__button {
+  position: absolute;
+  min-width: 65px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -688,7 +760,7 @@ img {
   }
 }
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 700px;
   }
 
@@ -741,6 +813,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+    width: 92%;
   }
 
   .navbar__search, .navbar-menu, .navbar__user {
@@ -789,25 +862,31 @@ img {
     order: -1;
     margin-left: 0;
   }
-  .hotel .slider {
-    height: 350px;
-  }
-  .hotel .hotel-right {
+  .hotel-right {
     min-height: 450px;
     flex-direction: column;
   }
-  .hotel .booking {
+
+  .slider {
+    height: 350px;
+  }
+
+  .newsletter-wrapper {
+    max-width: 576px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 92%;
+  }
+
+  .booking {
     width: 100%;
   }
-  .hotel .map {
+
+  .map {
     width: 100%;
   }
 }
 @media (max-width: 576px) {
-  .container {
-    padding: 0 20px;
-  }
-
   .logo {
     width: 99px;
   }
@@ -818,6 +897,17 @@ img {
 
   .hotel__slider {
     margin-bottom: 20px;
+  }
+
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+
+  .subscribe {
+    width: 100%;
   }
 }
 
