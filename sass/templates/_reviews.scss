@@ -1,0 +1,120 @@
+.reviews {
+  padding: 40px 0 70px 0;
+
+  &__title {
+    margin-bottom: 70px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-slider {
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 730px;
+      margin: 45px auto auto;
+      padding: 0 62px 30px;
+      background-color: #fff;
+      border-radius: 8px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 62px;
+        top: 13px;
+        width: 70px;
+        height: 47px;
+        background-image: url("../img/quote-left.svg");
+        background-repeat: no-repeat;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 62px;
+        top: 118px;
+        width: 70px;
+        height: 47px;
+        background-image: url("../img/quote-right.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__button {
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 10px;
+      background-position: center;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 1;
+
+      &--prev {
+        background-image: url("../img/arrow-prev-secondary.svg");
+        left: 0;
+      }
+
+      &--next {
+        background-image: url("../img/arrow-next-secondary.svg");
+        right: 0;
+      }
+    }
+
+    &__profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -45px;
+      margin-bottom: 30px;
+    }
+
+    &__avatar {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 9px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__username {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: $primary;
+    }
+
+    &__date {
+      margin-bottom: 4px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    &__rating {
+      display: flex;
+      align-items: center;
+    }
+
+    &__text {
+      max-width: 537px;
+      margin: auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 19px;
+      text-align: justify;
+    }
+  }
+}
