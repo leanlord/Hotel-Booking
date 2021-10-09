@@ -11,7 +11,9 @@ const hotelSlider = new Swiper('.hotel-slider', {
   keyboard: {
     enabled: true,
     onlyInViewport: true
-  }
+  },
+
+  allowTouchMove: true
 });
 
 const reviewsSlider = new Swiper('.reviews-slider', {
