@@ -851,6 +851,78 @@ img {
   text-align: justify;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+.activities__title {
+  margin-bottom: 57px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.card__title {
+  max-width: 100%;
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.card__button {
+  padding: 7px 22px;
+  border: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #EC1F46;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -867,6 +939,11 @@ img {
 
   .reviews__title {
     margin-bottom: 50px;
+  }
+
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -925,6 +1002,18 @@ img {
   .reviews__title {
     font-size: 30px;
     line-height: 22px;
+  }
+
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 340px;
+    height: 230px;
   }
 }
 @media (max-width: 768px) {
@@ -1004,6 +1093,16 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .card {
+    width: 48%;
+    height: 255px;
+  }
+
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1052,6 +1151,10 @@ img {
     right: 50%;
     margin-right: -85px;
     transform: translate(50%, 0);
+  }
+
+  .card {
+    width: 100%;
   }
 }
 
