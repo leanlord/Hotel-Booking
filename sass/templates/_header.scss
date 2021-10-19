@@ -1,4 +1,3 @@
-
 .navbar {
   background-color: #fff;
 
@@ -38,6 +37,14 @@
       text-transform: uppercase;
       font-size: 14px;
       line-height: 18px;
+    }
+
+    &__item {
+      &--mobile {
+        &_visible {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -93,5 +100,15 @@
     font-size: 14px;
     line-height: 18px;
     color: $text-color
+  }
+}
+
+.navbar {
+  &__user, &__search {
+    &--mobile {
+      &_visible {
+        display: none;
+      }
+    }
   }
 }

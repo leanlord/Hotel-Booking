@@ -125,6 +125,7 @@
       grid-row-gap: 40px;
       grid-template-columns: repeat(6, 1fr);
     }
+
     &__input {
       flex-basis: 48%;
     }
@@ -159,6 +160,7 @@
         grid-column: span 5;
         grid-row: 3;
       }
+
       &-form {
         grid-column: span 5;
         grid-row: 4;
@@ -172,11 +174,63 @@
     max-width: 576px;
     width: 92%;
   }
+  .body {
+    padding-top: 78px;
+  }
   .navbar {
-    &__search,
-    &-menu,
+    &--mobile {
+      &_fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 3;
+      }
+    }
+
+    &__user, &__search {
+      &--mobile {
+        &_hidden {
+          display: none;
+        }
+
+        &_visible {
+          display: flex;
+        }
+      }
+    }
+
     &__user {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-bottom {
       display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 78px;
+      padding-top: 30px;
+
+      &--visible {
+        display: block;
+      }
+    }
+
+    &-menu {
+      flex-direction: column;
+
+      &__item {
+        margin-bottom: 20px;
+
+        &--mobile {
+          &_visible {
+            display: block;
+          }
+        }
+      }
     }
   }
   .menu {
@@ -196,6 +250,16 @@
         width: 16px;
         height: 1px;
         background-color: $text-color;
+      }
+    }
+  }
+
+  .user {
+    &__name {
+      &--light {
+        color: $white;
+        margin-left: 0;
+        margin-top: 10px;
       }
     }
   }
@@ -346,33 +410,40 @@
     &-wrapper {
       grid-template-columns: 1fr;
     }
+
     &__logo {
       grid-row: 1;
       grid-column: 1;
     }
+
     &__social {
       &-network {
         grid-row: 2;
         grid-column: 1;
       }
     }
+
     &__additional {
       grid-row: 3;
       grid-column: 1;
     }
+
     &__categories {
       grid-row: 4;
       grid-column: 1;
     }
+
     &__legal {
       grid-row: 5;
       grid-column: 1;
     }
+
     &__contact {
       &-details {
         grid-row: 6;
         grid-column: 1;
       }
+
       &-form {
         grid-row: 7;
         grid-column: 1;
