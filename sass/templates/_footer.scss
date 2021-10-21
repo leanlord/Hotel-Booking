@@ -122,4 +122,13 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  &__email {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__address {
+    font-style: normal;
+  }
 }
