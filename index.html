@@ -437,9 +437,9 @@
     </a>
     <h3 class="modal__title modal__title--mb-3">Booking</h3>
     <form action="#" class="modal__form">
-      <input type="text" class="input modal__input" placeholder="Your Full Name*">
-      <input type="tel" class="input modal__input" placeholder="Phone Number*">
-      <input type="email" class="input modal__input" placeholder="Email*">
+      <input type="text" class="input modal__input" placeholder="Your Full Name*" required minlength="2">
+      <input type="tel" class="input modal__input" placeholder="Phone Number*" required>
+      <input type="email" class="input modal__input" placeholder="Email*" required>
       <textarea class="message modal__message" placeholder="Message"></textarea>
       <div class="modal__bottom">
         <button type="submit" class="button modal__button">Send</button>
