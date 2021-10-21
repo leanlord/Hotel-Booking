@@ -200,7 +200,7 @@
               <span class="booking__num">12100</span>
             </a>
           </div>
-          <button class="button booking__button">
+          <button data-toggle="modal" class="button booking__button">
             View Other Options
           </button>
         </div>
@@ -420,7 +420,7 @@
         <form action="#" class="footer__form">
           <input type="text" class="input footer__input" placeholder="Your Full Name*">
           <input type="tel" class="input footer__input" placeholder="Phone Number*">
-          <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+          <textarea cols="30" rows="10" class="message footer__message" placeholder="Message"></textarea>
           <button type="submit" class="button footer__button">Send</button>
           <span class="footer__info">* Required Fields</span>
         </form>
@@ -428,9 +428,29 @@
     </div>
   </div>
 </footer>
+
+<div class="modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__dialog">
+    <a href="#" class="modal__close">
+      <img src="img/close.svg" alt="icon: close">
+    </a>
+    <h3 class="modal__title modal__title--mb-3">Booking</h3>
+    <form action="#" class="modal__form">
+      <input type="text" class="input modal__input" placeholder="Your Full Name*">
+      <input type="tel" class="input modal__input" placeholder="Phone Number*">
+      <input type="email" class="input modal__input" placeholder="Email*">
+      <textarea class="message modal__message" placeholder="Message"></textarea>
+      <div class="modal__bottom">
+        <button type="submit" class="button modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </div>
+    </form>
+  </div>
+</div>
 <script src="js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/parallax.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

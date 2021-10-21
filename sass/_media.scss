@@ -167,6 +167,12 @@
       }
     }
   }
+
+  .modal {
+    &__dialog {
+      padding: 33px 50px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -339,6 +345,17 @@
       flex-basis: 100%;
     }
   }
+
+  .modal {
+    &__button {
+      min-width: auto;
+      width: 45%;
+    }
+
+    &__info {
+      font-size: 10px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -448,6 +465,12 @@
         grid-row: 7;
         grid-column: 1;
       }
+    }
+  }
+
+  .modal {
+    &__dialog {
+      padding: 22px 30px;
     }
   }
 }

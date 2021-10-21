@@ -1,0 +1,94 @@
+.modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 143, 223, 0.39);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 478px;
+    padding: 33px 88px;
+    border-radius: 8px;
+    background-color: $dark;
+    color: $white;
+    z-index: 101;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 18px;
+    top: 17px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 18px 24px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $footer-text-color;
+  }
+
+  &__message {
+    width: 100%;
+    min-height: 123px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $footer-text-color;
+  }
+
+  &__info {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__form {
+    min-width: 240px;
+    max-width: 302px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
