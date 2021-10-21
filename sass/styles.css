@@ -1067,6 +1067,13 @@ img {
   font-size: 12px;
   line-height: 15px;
 }
+.footer__email {
+  color: inherit;
+  text-decoration: none;
+}
+.footer__address {
+  font-style: normal;
+}
 
 .modal__overlay {
   position: fixed;
@@ -1394,6 +1401,10 @@ img {
   }
   .hotel-slider {
     height: 350px;
+  }
+
+  .search__input {
+    width: 245px;
   }
 
   .booking {

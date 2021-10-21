@@ -313,6 +313,12 @@
     }
   }
 
+  .search {
+    &__input {
+      width: 245px;
+    }
+  }
+
   .booking {
     width: 100%;
   }
